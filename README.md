@@ -5,7 +5,7 @@
 This project is a simple chat interface that utilizes FastAPI as a backend to serve a chatbot service. It allows users to send messages to an AI model and receive responses.
 
 <div align="center">
-  <img alt="ollama" height="200px" src="img\Screen1.png">
+  <img alt="ollama" height="500px" src="img\Screen1.png">
 </div>
 
 
