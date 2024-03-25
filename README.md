@@ -4,6 +4,16 @@
 
 This project is a simple chat interface that utilizes FastAPI as a backend to serve a chatbot service. It allows users to send messages to an AI model and receive responses.
 
+<div align="center">
+  <img alt="ollama" height="200px" src="img\Screen1.png">
+</div>
+
+
+## Power By OLLAMA
+<div align="center">
+  <img alt="ollama" height="200px" src="https://github.com/jmorganca/ollama/assets/3325447/0d0b44e2-8f4a-4e99-9b52-a5c1c741c8f7">
+</div>
+
 ## Features
 
 - Interactive chat interface with real-time messaging.
