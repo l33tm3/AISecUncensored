@@ -1,0 +1,200 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.chatbot-interface {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* Asegura que al menos tenga el alto de la pantalla */
+    width: 100%;
+}
+
+
+.chatbot-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Se ajusta al ancho del contenedor padre */
+    max-width: 600px; /* O mantiene un ancho máximo si la pantalla es más ancha */
+    flex-grow: 1; /* Permite que crezca para ocupar el espacio disponible */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Mantiene el contenido dentro del borde redondeado */
+}
+
+.chatbot-header {
+    background: #ededed;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chatbot-header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.chatbot-question {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.chatbot-messages {
+    overflow-y: auto; /* Asegura que los mensajes se desplacen verticalmente si es necesario */
+    flex-grow: 1; /* Permite que este contenedor crezca y tome todo el espacio disponible */
+}
+.chatbot-input {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #fafafa;
+    display: flex;
+}
+
+.chatbot-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chatbot-input button {
+    padding: 10px 20px;
+    background-color: #5c67f2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.chatbot-input button:hover {
+    background-color: #4a52d4;
+}
+.message-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message-avatar {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-message .message-avatar {
+    background-image: url('img\user.png');
+}
+
+.system-message .message-avatar {
+    background-image: url('img\system.png');
+}
+
+.message-bubble {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+
+.message-bubble:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background-color: rgba(200, 200, 200, 0.3);
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.user-message .message-bubble {
+    background-color: #e5e5ea;
+    align-self: flex-start;
+}
+
+.system-message .message-bubble {
+    background-color: #c7d2fe;
+    align-self: flex-end;
+}
+.message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.message-container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.message-container.user-message {
+    flex-direction: row-reverse;
+}
+
+.message-bubble {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message-bubble pre {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: pre-wrap; /* Asegura que los retornos de carro se mantengan */
+    border-radius: 5px;
+}
+.message-bubble .chat-image {
+    max-width: 100%; /* Asegúrate de que la imagen no sobrepase el tamaño del contenedor */
+    border-radius: 5px;
+    margin-top: 5px; /* Si quieres un poco de espacio sobre la imagen */
+}
+/* Media query para pantallas de tabletas */
+@media (max-width: 768px) {
+    .chatbot-content {
+        max-width: 90%; /* Ocupa más ancho de la pantalla en tabletas */
+        min-height: 600px; /* Un mínimo de altura para mantener la forma del chat */
+    }
+}
+
+/* Media query para pantallas de teléfonos móviles */
+@media (max-width: 480px) {
+    .chatbot-content {
+        border-radius: 0; /* En dispositivos móviles, se puede optar por no tener bordes redondeados */
+        min-height: 100vh; /* Ocupa toda la altura de la pantalla en móviles */
+        height: 100vh; /* Ocupa toda la altura de la pantalla en móviles */
+    }
+
+    .chatbot-messages {
+        margin: 0; /* No hay margen para la lista de mensajes en dispositivos móviles */
+    }
+}
+.file-label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid black; /* Contorno circular negro */
+    border-radius: 50%; /* Para hacer un contorno circular */
+    text-align: center;
+    line-height: 24px; /* Alinea el ícono verticalmente */
+    cursor: pointer;
+}
