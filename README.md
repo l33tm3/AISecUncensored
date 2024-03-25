@@ -1,3 +1,5 @@
+# WARNING ITS A DEV BRANCH THI BRANCH HAVE A BUGS, IF YOU DO YOU  WANT TO  USE APP -> SELECT MAIN BRANCH
+
 # GustavoGPT Chat Interface
 <div align="center">
   <img alt="ollama" height="350px" src="img\screen2.webp">
