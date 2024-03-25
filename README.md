@@ -9,9 +9,11 @@ This project is a simple chat interface that utilizes FastAPI as a backend to se
 </div>
 
 
-## Power By OLLAMA
+## Power By 
 <div align="center">
   <img alt="ollama" height="200px" src="https://github.com/jmorganca/ollama/assets/3325447/0d0b44e2-8f4a-4e99-9b52-a5c1c741c8f7">
+  <img alt="ollama" height="200px" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/FastAPI_b.jpg">
+  <img alt="ollama" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png">
 </div>
 
 ## Features
