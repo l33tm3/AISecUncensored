@@ -1,4 +1,8 @@
 # GustavoGPT Chat Interface
+<div align="center">
+  <img alt="ollama" height="500px" src="img\screen2.webp">
+</div>
+
 
 ## Overview
 
