@@ -3,6 +3,8 @@
   <img alt="ollama" height="350px" src="img\screen2.webp">
 </div>
 
+# AISecUncensored 
+Talk with Ollama LLM -> Uncensured version 
 
 ## Overview
 
