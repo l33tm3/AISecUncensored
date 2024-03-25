@@ -16,18 +16,25 @@ This project is a simple chat interface that utilizes FastAPI as a backend to se
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: FastAPI (Python)
 
+## New Features:
+1. Friendly interfaz
+
+## Working Features
+1. Vision Upload Images (Soon)
+2. Options Temperature and another configs
+
 ## Installation and Setup
 
 To get the project up and running on your local machine, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-github-username/gustavogpt-chat-interface.git
+   git clone https://github.com/l33tm3/AISecUncensored.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd gustavogpt-chat-interface
+   cd AISecUncensored
    ```
 
 3. Install the required Python packages:
@@ -44,7 +51,7 @@ The `--reload` flag enables auto-reloading of the server on file changes.
 
 ## Usage
 
-Once the server is running, you can access the chat interface by going to `http://127.0.0.1:8000` in your web browser.
+Once the server is running, you can access the chat interface by going to `http://127.0.0.1:8000` in your web browser. ( Make Sure do you have a Ollama server install here  `https://ollama.com/`)
 
 Type your message into the input field and press "Enter" or click the "Enviar" button to send it. The response from the system will appear in the chat history above.
 
