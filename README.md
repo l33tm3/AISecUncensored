@@ -15,13 +15,16 @@ This project is a simple chat interface that utilizes FastAPI as a backend to se
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: FastAPI (Python)
+- **Model**: All's Ollama API Sever Rest
 
 ## New Features:
-1. Friendly interfaz
+1. Friendly interface
 
 ## Working Features
 1. Vision Upload Images (Soon)
 2. Options Temperature and another configs
+3. ChatGPT History Similiraty
+4. Select Model avaible from Ollama Models Store
 
 ## Installation and Setup
 
@@ -67,6 +70,10 @@ For deployment, you can containerize the application with Docker or deploy it to
 
 Contributions are welcome. Please open an issue first to discuss what you would like to change or add.
 
+If you find errors, don't forget to tag us in the discussion.
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+Ok
