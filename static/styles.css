@@ -10,22 +10,21 @@ body, html {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end; /* Cambiado de flex-start a flex-end */
     align-items: center;
     min-height: 100vh; /* Asegura que al menos tenga el alto de la pantalla */
     width: 100%;
 }
 
-
 .chatbot-content {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Se ajusta al ancho del contenedor padre */
-    max-width: 600px; /* O mantiene un ancho máximo si la pantalla es más ancha */
-    flex-grow: 1; /* Permite que crezca para ocupar el espacio disponible */
+    width: 100%;
+    max-width: 600px;
+    flex-grow: 1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden; /* Mantiene el contenido dentro del borde redondeado */
+    overflow: hidden;
 }
 
 .chatbot-header {
@@ -48,14 +47,15 @@ body, html {
 }
 
 .chatbot-messages {
-    overflow-y: auto; /* Asegura que los mensajes se desplacen verticalmente si es necesario */
-    flex-grow: 1; /* Permite que este contenedor crezca y tome todo el espacio disponible */
+    overflow-y: auto;
+    flex-grow: 1;
 }
 .chatbot-input {
     padding: 10px;
     border-top: 1px solid #ccc;
     background: #fafafa;
     display: flex;
+    margin-top: auto; /* Mueve la ventana de entrada hacia arriba */
 }
 
 .chatbot-input input[type="text"] {

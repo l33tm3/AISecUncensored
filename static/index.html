@@ -14,8 +14,19 @@
                 <div class="chatbot-question">
                     ¿Cómo puedo ayudarte hoy?
                 </div>
-            </div>
-            <div class="chatbot-messages" id="chatHistory">
+                <div class="chatbot-question">
+                    Modelo:
+                    <select id="modelSelect">
+                        {% for option in model_options %}
+                            <option value="{{ option }}">{{ option }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    Descripción: <span id="description"></span><br>
+                    Actualizado: <span id="updated"></span>
+                </div>
+                <div class="chatbot-messages">
                 <!-- Mensajes de chat aparecerán aquí -->
             </div>
             <div class="chatbot-input">
@@ -26,5 +37,6 @@
     </div>
 
     <script src="static\scripts.js"></script>
+    <script src="static\model.js"></script>
 </body>
 </html>
